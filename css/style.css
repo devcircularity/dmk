@@ -354,7 +354,6 @@ Header Section with Daima Mkenya Theme - White Icons & Text
 
 
 
-
 /*-----------------------------------------------------------
 Banner Section - Daima Mkenya Theme
 -----------------------------------------------------------*/
@@ -362,33 +361,39 @@ Banner Section - Daima Mkenya Theme
 .banner_section {
     width: 100%;
     float: left;
-    background-color: #ffffff; /* White background */
-    background-size: 100% 100%;
+    background-color: #ffffff;
+    background-size: cover;
     background-repeat: no-repeat;
+    padding: 50px 0;
 }
 
+/* Title Styling */
 .banner_taital {
     width: 100%;
     margin: 0 auto;
-    font-size: 64px; /* Reduced from 100px to 64px */
-    color: #c8102e; /* Kenyan flag red */
-    line-height: 70px; /* Adjusted line height for smaller title */
+    font-size: 48px;
+    color: #c8102e;
+    line-height: 1.2;
     padding-top: 20px;
     font-family: 'Great Vibes', cursive;
+    text-align: center;
 }
 
+/* Paragraph Text */
 .banner_text {
     width: 100%;
     float: left;
-    font-size: 16px;
-    color: #232323; /* Dark grey for readability */
-    margin: 20px 0px;
+    font-size: 18px;
+    color: #232323;
+    margin: 15px 0px;
+    text-align: center;
 }
 
+/* Call to Action Button */
 .read_bt {
-    width: 170px;
-    float: left;
-    padding-top: 30px;
+    width: 200px;
+    margin: 30px auto;
+    display: block;
 }
 
 .read_bt a {
@@ -396,9 +401,9 @@ Banner Section - Daima Mkenya Theme
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #009e49; /* Green for action */
+    background-color: #009e49;
     text-align: center;
-    padding: 10px 0px;
+    padding: 12px 0px;
     border-radius: 5px;
     text-transform: uppercase;
     transition: background-color 0.3s ease-in-out;
@@ -406,8 +411,60 @@ Banner Section - Daima Mkenya Theme
 
 .read_bt a:hover {
     color: #ffffff;
-    background-color: #f5ddb6; /* Cream hover effect */
+    background-color: #f5ddb6;
 }
+
+/* Two Images Side by Side */
+.banner_img_grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_img_grid img {
+    width: 48%; /* Ensure each image takes up about half of the container */
+    border-radius: 10px;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #009e49;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner_taital {
+        font-size: 32px;
+    }
+
+    .banner_text {
+        font-size: 14px;
+    }
+
+    .banner_img_grid {
+        flex-direction: column;
+    }
+
+    .banner_img_grid img {
+        width: 100%; /* Images stack vertically on small screens */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+}
+
+
 
 
 
